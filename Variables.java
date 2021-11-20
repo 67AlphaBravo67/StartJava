@@ -9,7 +9,7 @@ public class Variables {
         float price = 86365.55f;
         double freqMemoryHz = 660000000;
         System.out.println(numCores);
-        System.out.println(CPU);
+        System.out.println(cpu);
         System.out.println(isCompIsWork);
         System.out.println(cacheMemory);
         System.out.println(frequencyHz);
