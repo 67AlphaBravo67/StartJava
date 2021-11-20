@@ -26,22 +26,22 @@ public class Calculator {
         }
 //Выбор математического действия
         
-        if (mathAction =='+') {
+        if (mathAction == '+') {
             System.out.println("Результат: " + plus);
         } 
-        if (mathAction =='-') {
+        if (mathAction == '-') {
             System.out.println("Результат: " + minus);
         } 
-        if (mathAction =='*') {
+        if (mathAction == '*') {
             System.out.println("Результат: " + multiplication);
         }
-        if (mathAction =='/') {
+        if (mathAction == '/') {
             System.out.println("Результат: " + division);
         } 
-        if (mathAction =='%') {
+        if (mathAction == '%') {
             System.out.println("Результат: " + remainder);
         }
-        if (mathAction =='^') {
+        if (mathAction == '^') {
             System.out.println("Результат: " + result);
         }
     }             

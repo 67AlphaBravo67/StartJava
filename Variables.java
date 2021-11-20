@@ -1,5 +1,5 @@
 public class Variables {
-    public static void main(String[] args)  {
+    public static void main(String[] args) {
         byte numCores = 4;
         char cpu = 'r';
         boolean isCompIsWork = true;
