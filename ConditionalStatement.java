@@ -1,7 +1,7 @@
 public class ConditionalStatement {
     public static void main(String[] args) {
         int age = 28;
-        boolean isManSex = true ;
+        boolean isManSex = true;
         double height = 1.78;
         char firstLetterOfName = 'M';
 
@@ -9,7 +9,7 @@ public class ConditionalStatement {
             System.out.println("Значит за пивом без паспорта");
         } 
 
-        if (! isManSex) {
+        if (!isManSex) {
             System.out.println("Мужской пол");
         } 
         if (isManSex) {
@@ -24,7 +24,7 @@ public class ConditionalStatement {
         
         if (firstLetterOfName == 'M') {
             System.out.println("Знакомьтесь-это Миша");
-        } else if (firstLetterOfName =='I') {
+        } else if (firstLetterOfName == 'I') {
             System.out.println("Знакомьтесь-это Игорек");
         } else {
             System.out.println("Без Игоря и Миши будут не интересно");
