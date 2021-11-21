@@ -2,44 +2,38 @@ import java.util.Scanner;
 
 public class Calculator {
     public static void main(String[] args) {
-        Scanner insert = new Scanner(System.in);
+        Scanner console = new Scanner(System.in);
         System.out.println("Введите первое число");
-        int numberOne = insert.nextInt();
-        System.out.println("Первое введённое число: " + numberOne);
+        int a = console.nextInt();
+        System.out.println("Первое введённое число: " + a);
         System.out.println("Введите второе число");
-        int numberTwo = insert.nextInt();
-        System.out.println("Первое введённое число: " + numberTwo);
+        int b = console.nextInt();
+        System.out.println("Первое введённое число: " + b);
         System.out.println("Выберите математическое действие");
         System.out.print("Выбранное действие:");
-        char mathAction = insert.next().charAt(0);
+        char mathAction = console.next().charAt(0);
 
-        // Переменные математических действий
-        int plus = numberOne + numberTwo;
-        int minus = numberOne - numberTwo;
-        int multiplication = numberOne * numberTwo;
-        int division = numberOne / numberTwo;
-        int remainder = numberOne % numberTwo;
-        int result = 1;
-        for(int i = 1; i <= numberTwo; i++) {
-            result = result * numberOne;
-        }
-        //Выбор математического действия
+        // Выбор математического действия
         if (mathAction == '+') {
+            int plus = a + b;
             System.out.println("Результат: " + plus);
-        } 
-        if (mathAction == '-') {
+        } else if (mathAction == '-') {
+            int minus = a - b;
             System.out.println("Результат: " + minus);
-        } 
-        if (mathAction == '*') {
+        } else if (mathAction == '*') {
+            int multiplication = a * b;
             System.out.println("Результат: " + multiplication);
-        }
-        if (mathAction == '/') {
+        } else if (mathAction == '/') {
+            int division = a / b;
             System.out.println("Результат: " + division);
-        } 
-        if (mathAction == '%') {
+        } else if (mathAction == '%') {
+            int remainder = a % b;
             System.out.println("Результат: " + remainder);
-        }
-        if (mathAction == '^') {
+        } else if (mathAction == '^') {
+            int result = 1;
+            for (int i = 1; i <= b; i++) {
+                result = result * a;
+            }
             System.out.println("Результат: " + result);
         }
     }
