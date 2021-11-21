@@ -5,7 +5,7 @@ public class Variables {
         char cpu = 'r';
         System.out.println("Модель процессора: " + cpu);
         boolean isCompWork = true;
-        System.out.println( isCompWork);
+        System.out.println(isCompWork);
         short cacheMemory = 64;
         System.out.println("Значение кэш-памяти: " + cacheMemory);
         long frequencyHz = 30000000000l;
