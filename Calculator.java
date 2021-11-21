@@ -30,9 +30,9 @@ public class Calculator {
             int remainder = a % b;
             System.out.println("Результат: " + remainder);
         } else if (mathAction == '^') {
-            int result = 1;
             for (int i = 1; i <= b; i++) {
-                result = result * a;
+                int result = 1;
+                result = result * a;    
             }
             System.out.println("Результат: " + result);
         }
