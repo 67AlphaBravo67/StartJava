@@ -22,7 +22,7 @@ public class ConditionalStatement {
         char firstLetterOfName = 'M';
         if (firstLetterOfName == 'M') {
             System.out.println("Знакомьтесь, это-Миша");
-        } else if (firstLetterOfName == 'I') {
+        } else if (firstLetterOfName == 'И') {
             System.out.println("Знакомьтесь, это-Игорь");
         } else {
             System.out.println("Без Игоря и Миши будут не интересно");
