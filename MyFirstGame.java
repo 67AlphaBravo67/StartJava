@@ -1,4 +1,4 @@
-public class SimpleGame {
+public class MyFirstGame {
     public static void main(String[] args) {
         int guess = 67;
         for (int j = 0; j <= 100; j++) {
