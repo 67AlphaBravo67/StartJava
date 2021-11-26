@@ -5,9 +5,9 @@ public Class Person {
     float weight = 75.2f;
     int age = 28;
 
-    public void toGo();
-    public void toSit();
-    public void toRun();
-    public void toSay();
-    public void toLearnJava();
+    void toGo();
+    void toSit();
+    void toRun();
+    void toSay();
+    void toLearnJava();
 }
