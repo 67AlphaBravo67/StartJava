@@ -1,9 +1,9 @@
 public Class Person {
-    String sex = "men" ;
-    String name = "Evgeniy" ;
-    double height = "1.82" ;
-    double weight = "75.2" ;
-    int age = "28" ;
+    String sex = "men";
+    String name = "Evgeniy";
+    float height = 1.82f;
+    float weight = 75.2f;
+    int age = 28;
 
     public void toGo();
     public void toSit();
