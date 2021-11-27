@@ -5,6 +5,7 @@ public class Person {
     float weight = 75.2f;
     int age = 28;
 
+
     void go();
 
     void sit();
@@ -14,4 +15,3 @@ public class Person {
     void say();
     
     void learnJava();
-}
