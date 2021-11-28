@@ -1,14 +1,15 @@
  public class Wolf {
 
-    String nameWolf;
-    String sexWolf;
-    float heightWolf;
-    float weightWolf;
-    int ageWolf;
+    String name;
+    String sex;
+    float height;
+    float weight;
+    int age;
  
     void run() {
         System.out.println("Бегает");
     }
+
     void howl() {
         System.out.println("Воет");
     }
