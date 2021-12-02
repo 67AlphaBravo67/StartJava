@@ -1,22 +1,22 @@
 public class WolfTest {
     public static void main(String[] args) {
-        Wolf newWolf = new Wolf();
-        newWolf.sex = "Кобель";
-        System.out.println("Пол: "  + newWolf.sex);
-        newWolf.name = "Север";
-        System.out.println("Кличка: " + newWolf.name);
-        newWolf.height = 0.80f;
-        System.out.println("Рост в холке: " + newWolf.height + "м");
-        newWolf.weight = 39.5f;
-        System.out.println("Вес: " + newWolf.weight + "кг");
-        newWolf.ageW = 9;
-        System.out.println("Возраст: " + newWolf.age + " лет");
+        Wolf oneWolf = new Wolf();
+        oneWolf.setSex("Кобель");
+        System.out.println("Пол: "  + oneWolf.getSex());
+        oneWolf.setName("Диксон");
+        System.out.println("Кличка: " + oneWolf.getName());
+        oneWolf.setHeight(0.91f);
+        System.out.println("Рост в холке: " + oneWolf.getHeight() + "м");
+        oneWolf.setWeight(42.3f);
+        System.out.println("Вес: " + oneWolf.getWeight() + "кг");
+        oneWolf.setAge(11);
+        System.out.println("Возраст: " + oneWolf.getAge() + " лет");
 
         // Вызов методов
-        newWolf.run();
-        newWolf.howl();
-        newWolf.hunt();
-        newWolf.go();
-        newWolf.sit();
+        oneWolf.run();
+        oneWolf.howl();
+        oneWolf.hunt();
+        oneWolf.go();
+        oneWolf.sit();
     }
 }
