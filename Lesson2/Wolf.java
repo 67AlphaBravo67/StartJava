@@ -2,6 +2,11 @@
 
     // Геттер и Сеттер переменной name
     private String name; 
+    private String sex;
+    private float height;
+    private float weight;
+    private int age;
+    
     public String getName() {
         return name;
     } 
@@ -11,7 +16,7 @@
     }
 
     // Сеттер и Геттер переменной sex
-    private String sex;
+    
     public String getSex() {
         return sex;
     } 
@@ -21,7 +26,6 @@
     }
 
     // Сеттер и Геттер переменной height
-    private float height;
     public float getHeight() {
         return height;
     } 

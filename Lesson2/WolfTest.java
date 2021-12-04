@@ -9,7 +9,7 @@ public class WolfTest {
         System.out.println("Рост в холке: " + oneWolf.getHeight() + "м");
         oneWolf.setWeight(42.3f);
         System.out.println("Вес: " + oneWolf.getWeight() + "кг");
-        oneWolf.setAge(11);
+        oneWolf.setAge(7);
         System.out.println("Возраст: " + oneWolf.getAge() + " лет");
 
         // Вызов методов
