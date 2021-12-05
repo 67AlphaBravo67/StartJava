@@ -28,7 +28,6 @@ public class Calculator {
         this.mathAction = calcFirst;
     }
 
-        // Выбор математического действия
     public void calculating() {
         switch (getMathAction()) {
             case ('+') :
