@@ -5,54 +5,54 @@ public class Calculator {
     private char mathAction;
 
     public int getA() {
-                return a;
-    }
-
-    public int getB() {
-        return b;
-    }
-
-    public char getMathAction() {
-        return mathAction;
+        return a;
     }
 
     public void setA(int calcFirst) {
         this.a = calcFirst;
     }
 
+    public int getB() {
+        return b;
+    }
+
     public void setB(int calcFirst) {
         this.b = calcFirst;
+    }
+
+    public char getMathAction() {
+        return mathAction;
     }
 
     public void setMathAction(char calcFirst) {
         this.mathAction = calcFirst;
     }
 
-    public void calculating() {
-        switch (getMathAction()) {
+    public void calculate() {
+        switch (mathAction) {
             case ('+') :
-            System.out.println("Результат: " + (getA() + getB()));
+                System.out.println("Результат: " + (a + b));
                 break;    
             case ('-') :
-            System.out.println("Результат: " + (getA() - getB()));
+                System.out.println("Результат: " + (a - b));
                 break;
             case ('*') :
-            System.out.println("Результат: " + (getA() * getB()));
+                System.out.println("Результат: " + (a * b));
                 break;
             case ('/') :
-            System.out.println("Результат: " + (getA() / getB()));
+                System.out.println("Результат: " + (a / b));
                 break;
             case ('%') :
-            System.out.println("Результат: " + (getA() % getB()));
+                System.out.println("Результат: " + (a % b));
                 break;
             case ('^') :
-            int result = 1;
-            for (int i = 1; i <= getB(); i++) {
-                result = result * getA();
+                int result = 1;
+                for (int i = 1; i <= b; i++) {
+                result *= a;
             }
-            System.out.println("Результат: " + result);
+                System.out.println("Результат: " + result);
                 break;    
-            }
+        }
     }
 }
 

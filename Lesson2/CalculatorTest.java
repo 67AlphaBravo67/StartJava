@@ -2,20 +2,20 @@ import java.util.Scanner;
 
 public class CalculatorTest {
     public static void main(String[] args) {
-        Calculator calcFirst = new Calculator();
+        Calculator calc = new Calculator();
         Scanner console = new Scanner(System.in);
         String answer = "";
         while (!answer.equals("no")) {
             System.out.println("Введите первое число");
-            calcFirst.setA(console.nextInt());
-            System.out.println("Первое введённое число: " + calcFirst.getA());
+            calc.setA(console.nextInt());
+            System.out.println("Первое введённое число: " + calc.getA());
             System.out.println("Выберите математическое действие");
-            calcFirst.setMathAction(console.next().charAt(0));
-            System.out.println("Выбранное действие: " + calcFirst.getMathAction());
-            System.out.println("Введите второе число");
-            calcFirst.setB(console.nextInt());
-            System.out.println("Второе введённое число: " + calcFirst.getB());
-            calcFirst.calculating();
+            calc.setMathAction(console.next().charAt(0));
+            System.out.println("Выбранное действие: " + calc.getMathAction());
+            System.out.println("Введите второе число: ");
+            calc.setB(console.nextInt());
+            System.out.println("Второе введённое число: " + calc.getB());
+            calc.calculate();
             do {
                 System.out.println("Хотите продолжить вычисления?");
                 answer = console.next();
