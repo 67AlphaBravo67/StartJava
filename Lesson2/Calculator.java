@@ -8,24 +8,24 @@ public class Calculator {
         return a;
     }
 
-    public void setA(int calcFirst) {
-        this.a = calcFirst;
+    public void setA(int calc) {
+        this.a = calc;
     }
 
     public int getB() {
         return b;
     }
 
-    public void setB(int calcFirst) {
-        this.b = calcFirst;
+    public void setB(int calc) {
+        this.b = calc;
     }
 
     public char getMathAction() {
         return mathAction;
     }
 
-    public void setMathAction(char calcFirst) {
-        this.mathAction = calcFirst;
+    public void setMathAction(char calc) {
+        this.mathAction = calc;
     }
 
     public void calculate() {
@@ -48,12 +48,10 @@ public class Calculator {
             case ('^') :
                 int result = 1;
                 for (int i = 1; i <= b; i++) {
-                result *= a;
-            }
+                    result *= a;
+                }
                 System.out.println("Результат: " + result);
                 break;    
         }
     }
 }
-
-

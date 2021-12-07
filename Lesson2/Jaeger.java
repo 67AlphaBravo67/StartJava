@@ -10,6 +10,19 @@ public class Jaeger {
     private int strength;
     private int armor;
 
+    // Констуктор
+    public Jaeger(String name, String mark, String origin, float height, float weight,
+        int speed,int strength,int armor) {
+        this.name = name;
+        this.mark = mark;
+        this.origin = origin;
+        this.height = height;
+        this.weight = weight;
+        this.speed = speed;
+        this.strength = strength;
+        this.armor = armor;
+    }
+
     // Геттеры и Сеттеры
     public String getName() {
         return name;
@@ -77,18 +90,18 @@ public class Jaeger {
 
     // Методы
     public void fly() {
-        System.out.print("Летает\t");
+        System.out.println("Летает");
     }
 
     public void shoot() {
-        System.out.print("Стреляет\t");
+        System.out.println("Стреляет");
     }
 
     public void drift() {
-        System.out.print("Скользит\t");
+        System.out.println("Скользит");
     }
 
     public void swim() {
-        System.out.print("Плавает\t");
+        System.out.println("Плавает");
     }
 }
