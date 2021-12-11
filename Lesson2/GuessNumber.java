@@ -32,6 +32,5 @@ public class GuessNumber {
                 }
         } while ((player1.getNumber() != targetNumber) || (player2.getNumber() != targetNumber));
         System.out.println("Общее число попыток " + numberOfAttempts);
-
     }
 }
