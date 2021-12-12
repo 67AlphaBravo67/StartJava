@@ -51,6 +51,6 @@ public class GuessNumber {
                 System.out.println("Число меньше загаданного.");
             }
         } while (true);
-        System.out.println("Общее число попыток " + numberOfAttempts);
+        System.out.println("Общее число попыток: " + numberOfAttempts);
     }
 }
