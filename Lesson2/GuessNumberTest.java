@@ -11,7 +11,10 @@ public class GuessNumberTest {
             System.out.println("Введите имя второго игрока.");
             Player player2 = new Player(sc.next());
             System.out.println("Имя второго игрока: " + player2.getName());
-            GuessNumber game = new GuessNumber(player1, player2);
+            System.out.println("Введите имя третьего игрока.");
+            Player player3 = new Player(sc.next());
+            System.out.println("Имя третьего игрока: " + player3.getName());
+            GuessNumber game = new GuessNumber(player1, player2, player3);
             game.launch();
             do {
                 answer = sc.nextLine();
