@@ -9,7 +9,7 @@ public class GuessNumber {
     private int targetNumber;
     private int numberOfAttempts;
 
-    public GuessNumber(Player player1, Player player2,Player player3) {
+    public GuessNumber(Player player1, Player player2, Player player3) {
         this.player1 = player1;
         this.player2 = player2;
         this.player3 = player3;
