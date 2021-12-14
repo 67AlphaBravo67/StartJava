@@ -1,3 +1,5 @@
+package com.startjava.lesson1.calculator;
+
 import java.util.Scanner;
 
 public class Calculator {
@@ -10,7 +12,7 @@ public class Calculator {
         int b = console.nextInt();
         System.out.println("Первое введённое число: " + b);
         System.out.println("Выберите математическое действие");
-        System.out.print("Выбранное действие:");
+        System.out.println("Выбранное действие:");
         char mathAction = console.next().charAt(0);
 
         // Выбор математического действия
