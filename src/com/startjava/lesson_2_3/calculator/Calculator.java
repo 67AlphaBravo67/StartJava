@@ -31,18 +31,29 @@ public class Calculator {
         this.mathAction = calc;
     }
 
-    public String getS() { return s; }
+    public String getS() { return s ; }
 
-    public void setS(String s) { this.s = s;}
+    public void setS(String s) { this.s = s; }
 
     public void calculate() {
+
+    String str = getS(); // Передача значения выражения в переменную str типа String
+    String[] string = str.split(" "); // Отделяем символы и передаем в массив
+    a = Integer.parseInt(string[0]);
+    mathAction = string[1].charAt(0);
+    b = Integer.parseInt(string[2]);
+
+    System.out.println("Первое введённое число: " + a);
+    System.out.println("Выбранное действие: " + mathAction);
+    System.out.println("Второе введённое число: " + b);
+
         switch (mathAction) {
-            case ('+') -> System.out.println("Результат: " + (a + b));
-            case ('-') -> System.out.println("Результат: " + (a - b));
-            case ('*') -> System.out.println("Результат: " + (a * b));
-            case ('/') -> System.out.println("Результат: " + (a / b));
-            case ('%') -> System.out.println("Результат: " + (a % b));
-            case ('^') -> {
+            case '+' -> System.out.println("Результат: " + (a + b));
+            case '-' -> System.out.println("Результат: " + (a - b));
+            case '*' -> System.out.println("Результат: " + (a * b));
+            case '/' -> System.out.println("Результат: " + (a / b));
+            case '%' -> System.out.println("Результат: " + (a % b));
+            case '^' -> {
                 int result = 1;
                 for (int i = 1; i <= b; i++) {
                     result *= a;
