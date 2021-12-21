@@ -25,7 +25,7 @@ public class CalculatorTest {
             calc.calculate();
             do {
                 System.out.println("Хотите продолжить вычисления?");
-                answer = console.next();
+                answer = console.nextLine();
             } while (!answer.equals("yes") && (!answer.equals("no")));
         }
     }
