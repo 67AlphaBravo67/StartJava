@@ -7,7 +7,6 @@ public class GuessNumber {
     final private Player player2;
     final private Player player3;
 
-    private int targetNumber;
     private int numberOfAttempts;
 
     public GuessNumber(Player player1, Player player2, Player player3) {
@@ -18,7 +17,7 @@ public class GuessNumber {
 
     public void launch() {
         Scanner scanner = new Scanner(System.in);
-        targetNumber = (int) ((Math.random() * 100) + 1);
+        int targetNumber = (int) ((Math.random() * 100) + 1);
         System.out.println("Случайное число(Для проверки)" + targetNumber);
         do {
             System.out.println(player1.getName() + ", введите число.");
