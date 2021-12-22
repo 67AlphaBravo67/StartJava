@@ -1,11 +1,11 @@
-package com.startjava.lesson_2_3.game;
+package com.startjava.lesson_2_3_4.game;
 import java.lang.Math;
 import java.util.Scanner;
 
 public class GuessNumber {
-    private Player player1;
-    private Player player2;
-    private Player player3;
+    final private Player player1;
+    final private Player player2;
+    final private Player player3;
 
     private int targetNumber;
     private int numberOfAttempts;

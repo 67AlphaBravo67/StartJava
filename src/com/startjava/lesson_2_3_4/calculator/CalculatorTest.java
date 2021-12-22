@@ -1,4 +1,4 @@
-package com.startjava.lesson_2_3.calculator;
+package com.startjava.lesson_2_3_4.calculator;
 
 import java.util.Scanner;
 
@@ -9,8 +9,6 @@ public class CalculatorTest {
         String answer = "";
         while (!answer.equals("no")) {
             System.out.println("Введите математическое выражение");
-            calc.setS(console.nextLine()); // Ввод выражения
-            System.out.println("Введенное математическое выражение = " + calc.getS());
             calc.calculate();
             do {
                 System.out.println("Хотите продолжить вычисления?");
