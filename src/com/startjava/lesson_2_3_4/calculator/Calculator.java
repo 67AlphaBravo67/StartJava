@@ -1,17 +1,13 @@
 package com.startjava.lesson_2_3_4.calculator;
 
-import java.util.Scanner;
-
 public class Calculator {
 
     private int a;
     private int b;
     private char mathAction;
     public String mathExpression;
-    Scanner sc = new Scanner(System.in);
 
-    public void calculate() {
-        mathExpression = sc.nextLine();
+    public void calculate(String mathExpression) {
         String[] arrExpression = mathExpression.split(" ");
         a = Integer.parseInt(arrExpression[0]);
         mathAction = arrExpression[1].charAt(0);

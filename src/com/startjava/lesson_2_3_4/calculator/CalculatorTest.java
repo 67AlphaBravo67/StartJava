@@ -9,7 +9,7 @@ public class CalculatorTest {
         String answer = "";
         while (!answer.equals("no")) {
             System.out.println("Введите математическое выражение");
-            calc.calculate();
+            calc.calculate(console.nextLine());
             do {
                 System.out.println("Хотите продолжить вычисления?");
                 answer = console.nextLine();
