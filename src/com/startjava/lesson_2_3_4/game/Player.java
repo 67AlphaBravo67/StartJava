@@ -1,17 +1,18 @@
 package com.startjava.lesson_2_3_4.game;
 
 public class Player {
-    final private String name;
+    private String name;
     private int number;
+    private int[] enteredNumbers = new int[10];
 
-    public Player(String name) {
+    public Player(String name) {  // Констуктор создания игроков
         this.name = name;
     }
 
     public String getName() {
         return name;
     }
-    
+
     public int getNumber() {
         return number;
     }
@@ -19,4 +20,9 @@ public class Player {
     public void setNumber(int number) {
         this.number = number;
     }
+
+    public void setEnteredNumbers(int enteredNumbers) {
+    }
 }
+
+
